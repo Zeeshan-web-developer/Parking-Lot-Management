@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <WithAlert>
         <Routes />
-        <Footer />
       </WithAlert>
+      <Footer />
     </BrowserRouter>
   );
 }

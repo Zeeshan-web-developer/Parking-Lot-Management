@@ -12,20 +12,7 @@ const Header = ({ children }) => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex gap-6">
-          <a to="#" className="link__hover">
-            Home
-          </a>
-          <Link to="#" className="link__hover">
-            About
-          </Link>
-          <Link to="#" className="link__hover">
-            Contact
-          </Link>
-          <Link to="#" className="link__hover">
-            Help
-          </Link>
-        </nav>
+        <></>
 
         <div>{children ? children : null}</div>
       </div>
