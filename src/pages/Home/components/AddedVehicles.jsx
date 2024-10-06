@@ -1,5 +1,5 @@
 import React from "react";
-import VehicleCard from "components/VehicleCard";
+import { VehicleCard } from "components/index";
 
 function AddedVehicles({ filteredSpots, removeVehicle, getParkedDuration }) {
   return (
