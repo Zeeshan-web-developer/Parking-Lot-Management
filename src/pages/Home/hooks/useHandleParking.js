@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TOTAL_PARKING_SPOTS } from "../../../constants";
+import { TOTAL_PARKING_SPOTS } from "constants";
 import { useAlert } from "react-alert";
 
 function useHandleParking() {

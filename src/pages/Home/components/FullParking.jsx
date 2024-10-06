@@ -12,4 +12,4 @@ function FullParking({ parkingSpots }) {
   );
 }
 
-export default FullParking;
+export default React.memo(FullParking);

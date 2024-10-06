@@ -1,16 +1,24 @@
 import React from "react";
-import InputField from "../../../components/InputField";
-import Button from "../../../components/Button";
+import InputField from "components/InputField";
+import Button from "components/Button";
 
 function AddNewVehicle({ licensePlate, setLicensePlate, parkVehicle }) {
   return (
-    <div className="mb-6 flex justify-center items-center gap-2">
-      <InputField
-        value={licensePlate}
-        onChange={(e) => setLicensePlate(e.target.value)}
-        placeholder="Enter License Plate"
-      />
-      <Button onClick={parkVehicle} label="Park Vehicle" color="bg-green-500" />
+    <div className="flex-1 bg-white p-4 rounded shadow">
+      <h2 className="text-xl font-semibold mb-2">Add New Vehicle</h2>
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mb-6">
+        <InputField
+          value={licensePlate}
+          onChange={(e) => setLicensePlate(e.target.value)}
+          placeholder="Enter License Plate"
+          className="flex-1" // Ensures the input takes up available space
+        />
+        <Button
+          onClick={parkVehicle}
+          label="Park Vehicle"
+          color="bg-green-500"
+        />
+      </div>
     </div>
   );
 }
