@@ -7,10 +7,8 @@ This is a simple Parking Lot Management System built using React. The app allows
 </div>
 
 <div align="center">
-<video width="520" height="440" controls>
-  <source src="https://www.loom.com/share/43d01a544d8f45d8afad2e8aa327b9f9" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<img src="/public/images/43d01a544d8f45d8afad2e8aa327b9f9-ezgif.com-video-to-gif-converter.gif" width="40" height="40" />
+
 </div>
 
 ## Features
