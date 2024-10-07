@@ -39,7 +39,7 @@ Before running this project, ensure you have the following installed:
 2. Navigate to the project folder:
 
    ```bash
-   cd parking-lot-management
+   cd parking-lot-management-app
    ```
 
 3. Install the required dependencies:
@@ -61,7 +61,7 @@ Before running this project, ensure you have the following installed:
 
 ## Folder Structure
 
-```
+````
 src
 ├── components
 │   ├── Button.jsx            # Reusable button component
@@ -69,7 +69,7 @@ src
 │   ├── InputField.jsx             # Reusable input field component
 │   └── VehicleCard.jsx       # Card to display each parked vehicle
 └── pages
-    ├── home
+     ├── home
         ├── components
         │   ├── AddedVehicles.jsx     # Component to display added vehicles
         │   ├── AddNewVehicle.jsx      # Component for adding a new vehicle
@@ -80,7 +80,7 @@ src
         └── hooks
             └── useHandleParking.js    # Custom hook for parking logic
 
-```
+```── Routes -   # Route hanling for navigation
 
 ## Components
 
@@ -125,3 +125,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Feel free to modify the content based on your actual project details and repository link!
+````
