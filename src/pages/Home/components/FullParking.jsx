@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"; // ES6
 
 function FullParking({ parkingSpots }) {
   return (
@@ -11,5 +12,9 @@ function FullParking({ parkingSpots }) {
     </>
   );
 }
+
+FullParking.propTypes = {
+  parkingSpots: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default React.memo(FullParking);

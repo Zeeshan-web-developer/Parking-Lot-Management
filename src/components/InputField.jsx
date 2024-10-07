@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"; // ES6
+
 const InputField = ({
   value,
   onChange,
@@ -27,4 +29,11 @@ const InputField = ({
   );
 };
 
+InputField.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  handleButtonClick: PropTypes.func,
+};
 export default InputField;

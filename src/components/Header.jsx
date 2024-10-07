@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types"; // ES6
+
 import Logo from "../assets/images/logo.webp";
 import { Link } from "react-router-dom";
 const Header = ({ children }) => {
@@ -17,6 +19,10 @@ const Header = ({ children }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  children: PropTypes.object,
 };
 
 export default Header;

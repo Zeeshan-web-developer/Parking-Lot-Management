@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"; // ES6
 import Button from "./Button";
 
 const VehicleCard = ({ vehicle, onRemove, index, parkedDuration }) => {
@@ -17,6 +18,17 @@ const VehicleCard = ({ vehicle, onRemove, index, parkedDuration }) => {
       />
     </div>
   );
+};
+
+VehicleCard.propTypes = {
+  vehicle: PropTypes.shape({
+    plate: PropTypes.string.isRequired,
+    slotNumber: PropTypes.number.isRequired,
+    parkedAt: PropTypes.instanceOf(Date),
+  }).isRequired,
+  onRemove: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
+  parkedDuration: PropTypes.string.isRequired,
 };
 
 export default VehicleCard;

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaParking } from "react-icons/fa";
+import PropTypes from "prop-types"; // ES6
 
 const RemainingSlots = ({ parkingSpots }) => {
   const remainingSlots = parkingSpots?.filter((spot) => spot === null).length;
@@ -18,6 +19,10 @@ const RemainingSlots = ({ parkingSpots }) => {
       </p>
     </div>
   );
+};
+
+RemainingSlots.propTypes = {
+  parkingSpots: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default React.memo(RemainingSlots);

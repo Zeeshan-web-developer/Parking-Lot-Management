@@ -1,5 +1,6 @@
 import React from "react";
 import { VehicleCard } from "components/index";
+import PropTypes from "prop-types"; // ES6
 
 function AddedVehicles({ filteredSpots, removeVehicle, getParkedDuration }) {
   return (
@@ -20,5 +21,11 @@ function AddedVehicles({ filteredSpots, removeVehicle, getParkedDuration }) {
     </div>
   );
 }
+
+AddedVehicles.propTypes = {
+  filteredSpots: PropTypes.arrayOf(PropTypes.object),
+  removeVehicle: PropTypes.func.isRequired,
+  getParkedDuration: PropTypes.func.isRequired,
+};
 
 export default React.memo(AddedVehicles);

@@ -1,5 +1,6 @@
 import React from "react";
 import { InputField, Button } from "components/index";
+import PropTypes from "prop-types"; // ES6
 
 function AddNewVehicle({ licensePlate, setLicensePlate, parkVehicle }) {
   return (
@@ -21,5 +22,11 @@ function AddNewVehicle({ licensePlate, setLicensePlate, parkVehicle }) {
     </div>
   );
 }
+
+AddNewVehicle.propTypes = {
+  licensePlate: PropTypes.string.isRequired,
+  setLicensePlate: PropTypes.func.isRequired,
+  parkVehicle: PropTypes.func.isRequired,
+};
 
 export default AddNewVehicle;

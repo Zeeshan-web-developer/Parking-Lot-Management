@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types"; // ES6
+
 import { transitions, positions, Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 function Alert({ children }) {
@@ -16,5 +18,9 @@ function Alert({ children }) {
     </AlertProvider>
   );
 }
+
+Alert.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Alert;
