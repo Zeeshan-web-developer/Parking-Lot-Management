@@ -9,7 +9,7 @@ This is a simple Parking Lot Management System built using React. The app allows
 ## Demonstration
 
 <div align="center">
-<img src="/public/images/43d01a544d8f45d8afad2e8aa327b9f9-ezgif.com-video-to-gif-converter.gif" width="1000" height="640" />
+<img src="/public/images/43d01a544d8f45d8afad2e8aa327b9f9-ezgif.com-video-to-gif-converter.gif" width="300" height="300" />
 </div>
 
 ## Features
