@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/logo.webp";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 const Header = ({ children }) => {
   return (
     <header className="bg-nav text-white shadow-md mb-2">
@@ -11,7 +11,6 @@ const Header = ({ children }) => {
           </Link>
         </div>
 
-        {/* Navigation Links */}
         <></>
 
         <div>{children ? children : null}</div>
