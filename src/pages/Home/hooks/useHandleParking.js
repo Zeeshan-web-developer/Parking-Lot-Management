@@ -14,7 +14,7 @@ function useHandleParking() {
     // Update time every 60 seconds
     const interval = setInterval(() => {
       setCurrentTime(new Date());
-    }, 1000 * 60);
+    }, 1000);
 
     // Cleanup the interval on component unmount
     return () => clearInterval(interval);

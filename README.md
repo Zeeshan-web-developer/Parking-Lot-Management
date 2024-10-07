@@ -6,6 +6,13 @@ This is a simple Parking Lot Management System built using React. The app allows
   <img src="/public/images/KanzWay-KSA-10-06-2024_10_53_PM.png" width="100%"/>
 </div>
 
+<div align="center">
+<video width="520" height="440" controls>
+  <source src="https://www.loom.com/share/43d01a544d8f45d8afad2e8aa327b9f9" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
 ## Features
 
 - **Park a Vehicle**: Enter a vehicle's license plate and assign it to a parking spot.
