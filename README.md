@@ -3,7 +3,7 @@
 This is a simple Parking Lot Management System built using React. The app allows users to park vehicles by entering their license plate number, assigning them to an available parking spot, and removing them when needed. It also tracks how long each vehicle has been parked and allows filtering of parked vehicles based on license plate numbers.
 
 <div align="center">
-  <img src="/public/images/KanzWay-KSA-10-06-2024_10_53_PM.png" width="100%"/>
+  <img src="/public/images/demo.png" width="100%"/>
 </div>
 
 ## Demonstration
