@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { TOTAL_PARKING_SPOTS } from "constants";
 import { useAlert } from "react-alert";
+import ConfirmAlert from "components/ConfirmAlert";
 
 function useHandleParking() {
   const [parkingSpots, setParkingSpots] = useState(
     Array(TOTAL_PARKING_SPOTS).fill(null)
   );
+  const { removeVehicleDialog } = ConfirmAlert();
   const [licensePlate, setLicensePlate] = useState("");
   const [filter, setFilter] = useState("");
   const [currentTime, setCurrentTime] = useState(new Date()); // Track current time
@@ -68,9 +70,13 @@ function useHandleParking() {
    * @description Function to remove a vehicle from the parking lot.
    */
   const removeVehicle = (index) => {
-    const newParkingSpots = [...parkingSpots];
-    newParkingSpots[index] = null;
-    setParkingSpots(newParkingSpots);
+    const remove = () => {
+      const newParkingSpots = [...parkingSpots];
+      newParkingSpots[index] = null;
+      setParkingSpots(newParkingSpots);
+      alert.success("Vehicle removed successfully!");
+    };
+    removeVehicleDialog({ remove });
   };
 
   /**
