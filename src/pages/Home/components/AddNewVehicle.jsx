@@ -1,11 +1,15 @@
 import React from "react";
 import { InputField, Button } from "components/index";
 import PropTypes from "prop-types"; // ES6
+import { MdAdd } from "react-icons/md";
 
 function AddNewVehicle({ licensePlate, setLicensePlate, parkVehicle }) {
   return (
-    <div className="flex-1 bg-white p-4 rounded shadow">
-      <h2 className="text-xl font-semibold mb-2">Add New Vehicle</h2>
+    <div className="flex-1 bg-background p-4 rounded shadow ">
+      <h2 className="text-xl font-semibold mb-2 text-white">
+        <MdAdd className="text-2xl inline-block ml-2 text-white" />
+        Add New Vehicle
+      </h2>
       <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mb-6">
         <InputField
           value={licensePlate}

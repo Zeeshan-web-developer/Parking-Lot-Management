@@ -3,11 +3,32 @@
 @tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+}
+body {
+  background: linear-gradient(
+    135deg,
+    #2a9d8f,
+    %20#E9C46A,
+    %20#264653
+  ); /* Gradient from Teal to Golden Yellow */
+
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 
 code {
