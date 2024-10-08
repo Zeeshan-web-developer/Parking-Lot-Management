@@ -11,7 +11,7 @@ function Footer() {
             &copy; Designed by{" "}
             <a
               href="https://www.linkedin.com/in/zeeshan-ahmad-dar/"
-              className="text-blue-500 hover:underline"
+              className="text-links hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -28,7 +28,7 @@ function Footer() {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-500"
+              className="text-links hover:text-blue-500"
             >
               <FaFacebook />
             </a>
@@ -36,7 +36,7 @@ function Footer() {
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-500"
+              className="text-links hover:text-blue-500"
             >
               <FaTwitter />
             </a>
@@ -44,7 +44,7 @@ function Footer() {
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-500"
+              className="text-links hover:text-blue-500"
             >
               <FaLinkedin />
             </a>
@@ -52,7 +52,7 @@ function Footer() {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-500"
+              className="text-links hover:text-blue-500"
             >
               <FaInstagram />
             </a>

@@ -4,7 +4,9 @@ module.exports = {
 
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        links: "#2A9D8F",
+      },
       backgroundColor: (theme) => ({
         ...theme("colors"),
         primary: "#FF6F61",
