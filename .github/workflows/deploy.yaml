@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - master # Trigger this workflow when pushing to the main branch
-#   pull_request:
-#     branches:
-#       - main  # Trigger workflow on pull requests to the main branch
+  pull_request:
+    branches:
+      - master # Trigger workflow on pull requests to the main branch
 permissions:
   contents: write # Grant access to read repository contents
 jobs:
@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "20" # Define the node version, adjust according to your project requirements
 
