@@ -1,0 +1,40 @@
+name: Build, Test, and Deploy React App
+
+on:
+  push:
+    branches:
+      - main # Trigger this workflow when pushing to the main branch
+#   pull_request:
+#     branches:
+#       - main  # Trigger workflow on pull requests to the main branch
+permissions:
+  contents: write # Grant access to read repository contents
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # Define the node version, adjust according to your project requirements
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to github pages # You can change to any deployment platform, like Vercel
+        uses: JamesIves/github-pages-deploy-actions@4.1.0
+
+        with:
+          branch: gh-pages # The branch to deploy to, usually gh-pages
+          folder: build # The build folder containing your website files
+        # Set up in your repo secrets
