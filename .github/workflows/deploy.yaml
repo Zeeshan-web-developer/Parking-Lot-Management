@@ -3,7 +3,7 @@ name: Build, Test, and Deploy React App
 on:
   push:
     branches:
-      - main # Trigger this workflow when pushing to the main branch
+      - master # Trigger this workflow when pushing to the main branch
 #   pull_request:
 #     branches:
 #       - main  # Trigger workflow on pull requests to the main branch
