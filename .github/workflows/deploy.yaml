@@ -32,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to github pages # You can change to any deployment platform, like Vercel
-        uses: JamesIves/github-pages-deploy-actions@4.1.0
+        uses: JamesIves/github-pages-deploy-action@v4
 
         with:
           branch: gh-pages # The branch to deploy to, usually gh-pages
